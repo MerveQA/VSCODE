@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Burada</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">NAME</label>
+      <input type="text" name="name" id="name" value="MYY" />
+      <!-- burdaki value default olarak kullanıcıya deger verir -->
+      <!-- yada kullanıcı bazı bilgilieri girmezse otomatik bunu dolurur -->
+
+      <label for="password">PASSWORD</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="deger giriniz "
+      />
+
+      <!-- placeholder kullanıcıya yol gosterir -->
+
+      <label for="id">ID</label>
+      <input type="number" name="id" id="id" />
+
+      <label for="arama">ARAMA</label>
+      <input type="search" name="arama" id="arama" />
+
+      <label for="url">URL</label>
+      <input type="url" name="url" id="url" />
+
+      <label for="email">EMAİL</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="hidden">HİDDEN</label>
+      <input type="hidden" name="hidden" id="hidden" />
+
+      <label for="tel">TEL</label>
+      <input type="tel" name="tel" id="tel" />
+
+      <label for="">KULLANILMAZ</label>
+      <input type="text" disabled />
+      <hr />
+      <!-- FARKLI TURLER -->
+      <label for="">CHECKBOX</label>
+      <input type="checkbox" />
+
+      <input type="radio" id="bay" name="radio" />
+      <label for="bay">bay</label>
+
+      <input type="radio" id="bayan" name="radio" />
+      <label for="bayan">bayan</label>
+
+      <label for="">DOSYA YUKLE</label>
+      <input type="file" />
+
+      <label for="">TARİH SEC</label>
+      <input type="date" />
+
+      <label for="">SAAT SEC</label>
+      <input type="time" />
+
+      <label for="">AY SEC</label>
+      <input type="month" />
+
+      <!-- SELECT DENYORUM -->
+      <label for="sayılar">SECİNİZ</label>
+      <select name="sayılar" multiple size="1" id="sayılar">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <!-- OPTGROUP DENİYORUM -->
+      <label for="">OPTGROUP</label>
+      <select name="" id="">
+        <optgroup label="fruits">
+          <option value="banana">BANANA</option>
+          <option value="apple">APPLE</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <option value="ıspanak">ISPANAK</option>
+          <option value="lahana">LAHANA</option>
+        </optgroup>
+      </select>
+
+      <!-- TEXTAREA DENİYORUM -->
+      <label for="yorum">TEXTAREA</label>
+      <textarea
+        name="yorum"
+        id="yorum"
+        cols="30"
+        rows="10"
+        placeholder="yorum yazınız"
+        required
+      ></textarea>
+
+      <input type="button" value="DUGME" />
+      <input type="submit" value="GONDER" />
+      <input type="reset" value="RESET" />
+    </form>
+  </body>
+</html>
